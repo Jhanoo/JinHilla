@@ -392,7 +392,7 @@ if(window.Worker && navigator.mediaDevices){
 			time_stamp = now;
 			time = time_rslt;
 		}
-		if(time && hp && result.data.pattern > 0.1){
+		if(time && hp && result.data.pattern > 0.3){
 			pattern_time = Math.round(time + 2 - (now - time_stamp) / 1000);
 			pattern_hp = hp;
 		}
